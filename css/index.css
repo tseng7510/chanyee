@@ -1,0 +1,130 @@
+.wrapper {
+  padding: 0 !important;
+}
+
+.banner {
+  position: relative;
+}
+.banner .title {
+  position: absolute;
+  inset: 100px 20% 20%;
+  display: flex;
+  align-items: center;
+  font-size: 4rem;
+  line-height: 1;
+  z-index: 9;
+  color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .banner .title {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner .title {
+    font-size: 2.25rem;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .banner .title {
+    inset: 100px 20px 20%;
+  }
+}
+.banner .slick-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 3%;
+  display: flex;
+}
+.banner .slick-dots li {
+  margin: 0 5px;
+}
+.banner .slick-dots li.slick-active button {
+  background: #b20000;
+  opacity: 1;
+}
+.banner .slick-dots button {
+  width: 50px;
+  height: 2px;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  opacity: 0.5;
+  transition: all 1s ease-in-out;
+  line-height: 0;
+  font-size: 0;
+}
+@media screen and (max-width: 767px) {
+  .banner .slick-dots button {
+    width: 20px;
+  }
+}
+.banner .slick-list .slick-slide > div {
+  line-height: 0;
+}
+.banner .slick-list .pic {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+.banner .slick-list .pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.siteHeader {
+  position: fixed;
+  top: 0;
+}
+.siteHeader .headerBox {
+  background: none !important;
+}
+@media screen and (min-width: 1000px) {
+  .siteHeader .headerBox {
+    background: none !important;
+  }
+}
+.siteHeader .headerBox .logo,
+.siteHeader .headerBox .container {
+  border: none;
+}
+.siteHeader .headerBox .menuBox {
+  display: none;
+}
+
+.siteMain {
+  padding: 0;
+}
+
+.link {
+  bottom: 50px;
+  right: 3%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.9375rem;
+}
+.link::after {
+  content: "";
+  width: 18px;
+  height: 9px;
+  display: block;
+  transform: scaleX(-1);
+  background: url("../images/icon/back_arrow.svg");
+  margin: 0 0 0 10px;
+}
+
+.mobileBtn {
+  display: none;
+}
+.mobileBtn::before {
+  background: #fff;
+  box-shadow: #fff 0 7px 0 0, #fff 0 -7px 0 0;
+}
+.mobileBtn::after {
+  background: #fff;
+}/*# sourceMappingURL=index.css.map */

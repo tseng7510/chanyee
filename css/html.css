@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.html .content .container {
+  border-top: 5px solid #a59768;
+  padding: 5% 20px;
+  background: #eef1f7;
+}
+@media screen and (max-width: 767px) {
+  .html .content .container {
+    padding: 20px;
+  }
+}
+.html .content .editor {
+  max-width: 1180px;
+  margin: 0 auto;
+  color: #333333;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+.html .content .editor ul.style li {
+  position: relative;
+  padding: 5px 0 5px 20px;
+}
+.html .content .editor ul.style li::before {
+  content: "◆";
+  color: #a59768;
+  position: absolute;
+  left: 0;
+}
+.html .editor span.title {
+  color: #a59768;
+  font-weight: 700;
+}/*# sourceMappingURL=html.css.map */
