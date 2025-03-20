@@ -63,16 +63,6 @@
   <script type="text/javascript" src="../plugins/_customize.js"></script>
   <script type="text/javascript">
     (function() {
-      let windowWidth = $(window).width();
-      $(window).on('load resize scroll', function() {
-        windowWidth = $(window).width();
-        if (windowWidth < 1000) {
-          $('.logo img').attr('src', '../images/logo.svg');
-        } else {
-          $('.logo img').attr('src', '../images/logo_w.svg');
-        }
-      });
-
       const page = document.querySelectorAll('.page')
       const nav = document.createElement('nav');
       nav.className = 'sideNav';

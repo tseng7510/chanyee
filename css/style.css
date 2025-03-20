@@ -622,7 +622,7 @@ button:focus {
 .preLoad {
   position: fixed;
   inset: 0;
-  background: #eeeeee url('../images/logo_b.svg') center no-repeat;
+  background: #eeeeee url('../images/logo_b.png') center no-repeat;
   background-size: 220px 82px;
   z-index: 99;
 }
@@ -865,6 +865,7 @@ button:focus {
   z-index: 90;
   isolation: isolate;
   position: relative;
+  background: rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width: 1000px) {
   .siteHeader {
@@ -932,19 +933,20 @@ button:focus {
 }
 @media screen and (max-width: 1000px) {
   .headerBox .logo {
-    height: 60px;
-    flex-basis: auto;
+    /* height: 60px; */
+    /* flex-basis: auto; */
     margin: 0 auto 0px 20px;
+    /* align-self: center; */
   }
 }
 .headerBox .logo img {
   height: 50px;
 }
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .headerBox .logo img {
     height: 31px;
   }
-}
+} */
 
 @media screen and (max-width: 1000px) {
   .wrapper {
@@ -977,6 +979,8 @@ button:focus {
     margin: 0;
     flex-direction: column;
     position: fixed;
+    bottom: 0;
+    padding-top: 70px;
     /* top: 71px; */
     height: 100vh;
     height: 100dvh;

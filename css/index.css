@@ -72,12 +72,13 @@
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .siteHeader {
   position: fixed;
   top: 0;
+  background: none;
 }
 .siteHeader .headerBox {
   background: none !important;
@@ -109,12 +110,12 @@
   font-size: 0.9375rem;
 }
 .link::after {
-  content: "";
+  content: '';
   width: 18px;
   height: 9px;
   display: block;
   transform: scaleX(-1);
-  background: url("../images/icon/back_arrow.svg");
+  background: url('../images/icon/back_arrow.svg');
   margin: 0 0 0 10px;
 }
 
@@ -127,4 +128,4 @@
 }
 .mobileBtn::after {
   background: #fff;
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */

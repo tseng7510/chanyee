@@ -71,7 +71,6 @@
     $('.projectBox .listBox .item').eq(0).css('display', 'block');
     $('.projectBox .listBox .item').eq(1).addClass('contentBox');
 
-    $('.logo img').attr('src', '../images/logo_w.svg');
 
     $('.projectBox .listBox').slick({
       slidesToShow: 1,
@@ -121,18 +120,6 @@
         }
       }
     });
-
-    $('.mobileBtn').on('click', function(e) {
-      if ($('body').hasClass('mobileOpen')) {
-        setTimeout(() => {
-          $('.logo img').attr('src', '../images/logo_w.svg');
-        }, 1100)
-      } else {
-        setTimeout(() => {
-          $('.logo img').attr('src', '../images/logo.svg');
-        }, 1100)
-      }
-    })
   </script>
 </body>
 

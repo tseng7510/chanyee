@@ -63,7 +63,7 @@
   <?php include('include_body_bottom.php'); ?>
   <script type="text/javascript">
     $(window).on('load', function() {
-      $('.logo img').attr('src', '../images/logo_i.svg');
+      $('.logo img').attr('src', '../images/logo_i.png');
     });
     $(function() {
       $('.banner .listBox').slick({
@@ -71,7 +71,7 @@
         arrows: false,
         dots: true,
         fade: true,
-        speed: 900,
+        speed: 2000,
         infinite: true,
         autoplay: true,
         loop: true,
