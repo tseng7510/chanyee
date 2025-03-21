@@ -16,27 +16,33 @@
     <main class="siteMain projectBox" aria-label="main" itemscope>
       <div class="listBox">
         <div class="item">
-          <div class="pic"><img src="../images/in/project_00.jpg" alt=""></div>
-
-
-
-
+          <div class="pic">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../images/in/project_00_m.jpg">
+              <img src="../images/in/project_00.jpg" alt="">
+            </picture>
+          </div>
           <div class="infoBox">
             <div class="content">
               <div class="title">新榮序（敬請期待）</div>
-
-
             </div>
           </div>
-
-
-
         </div>
         <div class="item">
-          <div class="pic"><img src="../images/in/project_01.jpg" alt=""></div>
+          <div class="pic">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../images/in/project_01_m.jpg">
+              <img src="../images/in/project_01.jpg" alt="">
+            </picture>
+          </div>
         </div>
         <div class="item">
-          <div class="pic"><img src="../images/in/project_02.jpg" alt=""></div>
+          <div class="pic">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../images/in/project_02_m.jpg">
+              <img src="../images/in/project_02.jpg" alt="">
+            </picture>
+          </div>
         </div>
       </div>
 
