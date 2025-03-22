@@ -14,10 +14,13 @@
     </header>
 
     <main class="siteMain projectBox" aria-label="main" itemscope>
+      <button class="nextBtn"></button>
       <div class="listBox">
         <div class="item">
-          <a href="#"></a><!-- 下筆連結 -->
-          <div class="pic"><img src="../images/in/project_01_00.jpg" alt=""></div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="../images/in/project_01_00_m.jpg">
+            <img src="../images/in/project_01_00.jpg" alt="">
+          </picture>
           <div class="infoBox">
             <div class="content">
               <div class="title">三院</div>
@@ -49,12 +52,16 @@
           </div>
         </div>
         <div class="item">
-          <a href="#"></a><!-- 下筆連結 -->
-          <div class="pic"><img src="../images/in/project_01_01.jpg" alt=""></div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="../images/in/project_01_01_m.jpg">
+            <img src="../images/in/project_01_01.jpg" alt="">
+          </picture>
         </div>
         <div class="item">
-          <a href="#"></a><!-- 下筆連結 -->
-          <div class="pic"><img src="../images/in/project_01_02.jpg" alt=""></div>
+          <picture>
+            <source media="(max-width: 767px)" srcset="../images/in/project_01_02_m.jpg">
+            <img src="../images/in/project_01_02.jpg" alt="">
+          </picture>
         </div>
       </div>
     </main>
@@ -90,15 +97,19 @@
           $('.projectBox .listBox').slick('slickPrev');
           setTimeout(() => {
             checkScroll = false;
-          }, 1200)
+          }, 1200);
         } else {
           $('.projectBox .listBox').slick('slickNext');
           setTimeout(() => {
             checkScroll = false;
-          }, 1200)
+          }, 1200);
         }
       }
-    })
+    });
+
+    $('.nextBtn').on('click', function() {
+      $('.projectBox .listBox').slick('slickNext');
+    });
 
     $(document).on('touchstart', function(e) {
       startY = e.originalEvent.touches[0].clientY;

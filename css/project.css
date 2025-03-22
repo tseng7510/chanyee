@@ -173,11 +173,14 @@
     inset: 60px 40px 0;
   }
 }
-.projectDetail .listBox .item a {
+.projectDetail .nextBtn {
   display: block;
   position: absolute;
   inset: 0;
   z-index: 10;
+  background: none;
+  border: none;
+  opacity: 0;
 }
 .projectDetail .contentBox .infoBox .content {
   max-width: 1200px;
