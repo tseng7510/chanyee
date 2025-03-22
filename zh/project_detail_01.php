@@ -90,7 +90,7 @@
       speed: 1000,
     });
 
-    $('.projectBox .listBox').on('mousewheel', function(e) {
+    $(document).on('mousewheel', function(e) {
       if (checkScroll === false) {
         checkScroll = true;
         if (e.deltaY > 0) {
